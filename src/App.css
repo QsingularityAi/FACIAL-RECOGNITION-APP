@@ -1,0 +1,172 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  /* Main application container */
+  .App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container for feature cards */
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Feature card styling */
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Icon styling inside the feature card */
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0f3460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; /* Adjust size as necessary */
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling inside the feature card */
+  .feature-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Reusable button styling */
+  .upload-btn, .action-btn, .feature-button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .upload-btn:hover, .action-btn:hover, .feature-button:hover {
+    background-color: #ba2d44;
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  .progress {
+    width: 0;
+    height: 5px;
+    background: #4CAF50;
+    transition: width 0.3s ease;
+  }
+  
+  /* Result box styling */
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0f3460;
+    border-radius: 10px;
+  }
+  
+  .result pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Image preview styling */
+  .image-preview img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  
+  /* Add the following styles to App.css */
+  
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+  }
+  
+  .faceguard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: -30px; /* Adjust this value as needed */
+  }
+  
+  .app-header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px; /* Increase this value to add more space */
+  }
+  
+  .app-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px; /* Add this line to create additional space */
+  }
